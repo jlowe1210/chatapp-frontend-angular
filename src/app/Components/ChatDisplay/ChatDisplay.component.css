@@ -1,0 +1,25 @@
+.chat_display_container {
+  height: calc(100vh - 68px);
+  background-color: white;
+  margin-left: 114px;
+  overflow: scroll;
+}
+
+.messages_container {
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.message {
+  list-style: none;
+  margin: 4px 0;
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+
+.message_sender {
+  display: block;
+}

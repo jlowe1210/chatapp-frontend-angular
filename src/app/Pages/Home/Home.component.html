@@ -1,0 +1,32 @@
+<div class="form_container">
+  <form>
+    <h2
+      [ngStyle]="{ 'text-align': 'center', color: '#d70230' }"
+      *ngIf="isNameAvailable === true; else not"
+    >
+      {{ name }} is available
+    </h2>
+
+    <h1 class="form_title">
+      Welcome to <span [ngStyle]="{ color: '#d70230' }">An</span>Chat
+    </h1>
+    <input class="nameInput" type="text" name="chatname" [(ngModel)]="name" />
+    <button
+      (click)="setName()"
+      [disabled]="!name || !isNameAvailable"
+      class="form_btn"
+      type="submit"
+    >
+      Set Name!
+    </button>
+  </form>
+</div>
+
+<ng-template #not>
+  <h2
+    [ngStyle]="{ 'text-align': 'center', color: 'red' }"
+    *ngIf="isNameAvailable === false"
+  >
+    {{ name }} is not available
+  </h2>
+</ng-template>

@@ -1,0 +1,29 @@
+body {
+  background-color: #edeef2;
+}
+
+.form_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_title {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.nameInput {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.form_btn {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 5px;
+}

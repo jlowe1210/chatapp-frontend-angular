@@ -1,0 +1,22 @@
+<div class="chat_display_container">
+  <ul class="messages_container">
+    <div *ngFor="let message of messages">
+      <span
+        [ngStyle]="{
+          color: message.framework === 'angular' ? '#fe8ba4' : '#bff1fd'
+        }"
+        class="message_sender"
+        >{{ message.name }}</span
+      >
+      <li
+        [ngStyle]="{
+          'background-color':
+            message.framework === 'angular' ? '#d70230' : '#60dcfb'
+        }"
+        class="message"
+      >
+        {{ message.message }}
+      </li>
+    </div>
+  </ul>
+</div>

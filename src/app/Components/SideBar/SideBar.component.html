@@ -1,0 +1,17 @@
+<div class="side_bar_container">
+  <h2>USERS</h2>
+  <ul>
+    <li
+      [ngStyle]="{
+        color: user.framework === 'angular' ? '#d70230' : '#60dcfb'
+      }"
+      *ngFor="let user of connectedUsers | async"
+    >
+      {{
+        user.name === (name | async)
+          ? (formatName(user.name) | async)
+          : user.name
+      }}
+    </li>
+  </ul>
+</div>

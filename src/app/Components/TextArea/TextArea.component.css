@@ -1,0 +1,28 @@
+.textarea_container {
+  display: inline-block;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(calc(-50% + 60px), 0);
+  margin: 0 auto;
+}
+
+.text_area {
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textarea_container_btn {
+  position: absolute;
+  /* top: 0; */
+  right: 7px;
+  bottom: 11px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .text_area {
+    width: 181px;
+  }
+}

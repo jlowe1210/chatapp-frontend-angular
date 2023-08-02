@@ -1,0 +1,19 @@
+<form>
+  <div class="textarea_container">
+    <textarea
+      class="text_area"
+      type="text"
+      [(ngModel)]="message"
+      placeholder="write a messge"
+      rows="4"
+      cols="50"
+      name="message"
+    ></textarea>
+    <img
+      (click)="sendMessage()"
+      class="textarea_container_btn"
+      alt="send icon"
+      src="../../../assets/images/send-angular.png"
+    />
+  </div>
+</form>
